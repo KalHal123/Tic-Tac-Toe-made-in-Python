@@ -6,4 +6,4 @@ git-push.bat
 *.spec
 build/
 dist/
-versions.txt
+version.txt
