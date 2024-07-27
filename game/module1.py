@@ -68,5 +68,5 @@ def main():
 
         turn += 1
 
-if __name__ == "__main__":
+if __name__ == "__main__": #Running the main loop
     main()
