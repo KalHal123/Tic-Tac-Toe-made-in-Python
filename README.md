@@ -19,7 +19,7 @@ A simple console-based Tic-Tac-Toe game with an optional AI opponent, made in Py
 
 **Notice: The current Build/Release is made for x64 Windows and tested to work on Windows 10 and upwards.**
 
-**To run the EXE you have to first download the latest realease [here]()**
+**To run the EXE you have to first download the latest realease [here](https://github.com/KalHal123/Game/releases/tag/v1.0.0.0). You can also download the latest version of the source code there as a zip or from right above**
 
 **If you want to run the EXE without an AI opponent:**
 1. Run the EXE by double-clicking it or through the console by typing:
