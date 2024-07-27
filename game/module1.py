@@ -1,4 +1,4 @@
-# tic_tac_toe.py
+import sys
 
 def print_board(board):
     """Print the Tic-Tac-Toe board."""
@@ -38,11 +38,24 @@ def get_move():
         except ValueError:
             print("Invalid input. Please enter a number between 1 and 9.")
 
+def get_ai_move(board):
+    """Get the AI's move using basic rules."""
+    # Find the first empty spot (this can be improved with better logic)
+    for i in range(3):
+        for j in range(3):
+            if board[i][j] == " ":
+                return (i, j)
+
 def main():
     """Main game loop."""
     board = [[" " for _ in range(3)] for _ in range(3)]
     players = ["X", "O"]
     turn = 0
+    ai_enabled = False
+
+    # Check for AI flag in command-line arguments
+    if len(sys.argv) > 1 and sys.argv[1] == "-ai" and sys.argv[2].lower() == "true":
+        ai_enabled = True
 
     print("Tic-Tac-Toe Game")
     print_board(board)
@@ -51,10 +64,14 @@ def main():
         player = players[turn % 2]
         print(f"Player {player}'s turn")
 
-        row, col = get_move()
-        if board[row][col] != " ":
-            print("Cell already taken. Try again.")
-            continue
+        if ai_enabled and player == "O":
+            row, col = get_ai_move(board)
+            print(f"AI chooses position ({row * 3 + col + 1})")
+        else:
+            row, col = get_move()
+            if board[row][col] != " ":
+                print("Cell already taken. Try again.")
+                continue
 
         board[row][col] = player
         print_board(board)
@@ -68,5 +85,5 @@ def main():
 
         turn += 1
 
-if __name__ == "__main__": #Running the main loop
+if __name__ == "__main__":
     main()
