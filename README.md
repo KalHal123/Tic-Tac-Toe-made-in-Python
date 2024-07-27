@@ -39,9 +39,10 @@ A simple console-based Tic-Tac-Toe game with an optional AI opponent, made in Py
 
 1. Ensure you have Python installed.
 2. Navigate to the project directory.
-3. Run the game using:
+3. Navigate to the [game](game/) folder
+4. Run the game using:
     ```bash
-    python tic_tac_toe.py
+    python module1.py
     ```
 
 **If you want to run the Source Code with or without the AI opponent, you can add the same parameters to the launch command in the console as described [here](#how-to-run-the-exe-build). They also work for the source code.**
