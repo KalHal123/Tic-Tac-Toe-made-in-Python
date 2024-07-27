@@ -4,11 +4,11 @@
 - [Tic-Tac-Toe](#tic-tac-toe)
 - [Contents](#contents)
 - [Description](#description)
+- [Installing Requirements](#installing-requirements)
 - [How to Run](#how-to-run)
   - [How to Run the EXE Build](#how-to-run-the-exe-build)
   - [How to Run the Source Code](#how-to-run-the-source-code)
 - [License](#license)
-- [Installing Requirements](#installing-requirements)
 
 ### Description
 A simple console-based Tic-Tac-Toe game with an optional AI opponent, made in Python.
